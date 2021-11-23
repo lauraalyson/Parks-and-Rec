@@ -109,7 +109,7 @@ const Home = ({navigation}) => {
             <FlatList
               data={discoverData}
               renderItem={renderDiscoverItem}
-              keyExtractor={(item) => item.id}
+              keyExtractor={item => item.id}
               horizontal
               showsHorizontalScrollIndicator={false}
             />
@@ -123,7 +123,7 @@ const Home = ({navigation}) => {
             <FlatList
               data={activitiesData}
               renderItem={renderActivityItem}
-              keyExtractor={(item) => item.id}
+              keyExtractor={item => item.id}
               horizontal
               showsHorizontalScrollIndicator={false}
             />
@@ -137,7 +137,7 @@ const Home = ({navigation}) => {
             <FlatList
               data={learnMoreData}
               renderItem={renderLearnMoreItem}
-              keyExtractor={(item) => item.id}
+              keyExtractor={item => item.id}
               horizontal
               showsHorizontalScrollIndicator={false}
             />
