@@ -27,6 +27,7 @@ const TabNavigator = () => {
         activeTintColor: colors.orange,
         inactiveTintColor: colors.gray,
         showLabel: false,
+        headerShown: false,
       }}>
       <Tab.Screen
         name="Home"
