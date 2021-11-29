@@ -3,7 +3,7 @@ import {Text, View, StyleSheet} from 'react-native';
 import Home from './components/Home';
 import colors from './assets/colors/colors';
 import Details from './components/Details';
-import Liked from './components/Liked';
+import Hikes from './components/Hikes';
 import Profile from './components/Profile';
 import 'react-native-gesture-handler';
 import Entypo from 'react-native-vector-icons/Entypo';
@@ -34,16 +34,16 @@ const TabNavigator = () => {
         component={Home}
         options={{
           tabBarIcon: ({color}) => (
-            <Entypo name="home" size={32} color={color} />
+            <Entypo name="home" size={28} color={color} />
           ),
         }}
       />
       <Tab.Screen
-        name="Liked"
-        component={Liked}
+        name="Hikes"
+        component={Hikes}
         options={{
           tabBarIcon: ({color}) => (
-            <Entypo name="heart" size={32} color={color} />
+            <Entypo name="compass" size={28} color={color} />
           ),
         }}
       />
@@ -52,7 +52,7 @@ const TabNavigator = () => {
         component={Profile}
         options={{
           tabBarIcon: ({color}) => (
-            <MaterialCommunityIcons name="account" size={32} color={color} />
+            <MaterialCommunityIcons name="account" size={28} color={color} />
           ),
         }}
       />

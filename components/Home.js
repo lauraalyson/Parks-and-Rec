@@ -84,12 +84,7 @@ const Home = ({navigation}) => {
         {/* Header */}
         <SafeAreaView>
           <View style={styles.menuWrapper}>
-            <Feather
-              name="menu"
-              size={32}
-              color={colors.black}
-              style={styles.menuIcon}
-            />
+            <Text style={styles.titleStyle}>Parks&Rec</Text>
             <Image source={profile} style={styles.profileImage} />
           </View>
         </SafeAreaView>
@@ -161,12 +156,16 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   profileImage: {
-    width: 52,
-    height: 52,
+    width: 32,
+    height: 32,
     borderRadius: 10,
+    opacity: 0.85,
+  },
+  titleStyle: {
+    fontFamily: 'Lato-Bold',
+    fontSize: 32,
   },
   discoverWrapper: {
-    // marginHorizontal: 20,
     marginTop: 20,
   },
   discoverTitle: {
