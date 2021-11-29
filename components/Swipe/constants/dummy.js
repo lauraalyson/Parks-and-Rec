@@ -258,7 +258,7 @@ export const countries = [
   },
   {
     id: 3,
-    name: 'Grand Canyon',
+    name: 'Bryce Canyon',
     image: require('./../assets/images/indonesia/indonesia_map.png'),
     places: [
       {

@@ -15,6 +15,7 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import Dashboard from './components/Swipe/Dashboard';
+import Main from './components/Main';
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -39,8 +40,8 @@ const TabNavigator = () => {
         }}
       />
       <Tab.Screen
-        name="Hikes"
-        component={Hikes}
+        name="Main"
+        component={Main}
         options={{
           tabBarIcon: ({color}) => (
             <Entypo name="compass" size={28} color={color} />
