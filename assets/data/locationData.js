@@ -1,5 +1,6 @@
 export const countries = [
   {
+    // THIS IS THE FIRST LOCATION - YELLOWSTONE
     id: 1,
     name: 'Yellowstone',
     image: require('./../assets/images/malaysia/malaysia_map.png'),
@@ -7,6 +8,7 @@ export const countries = [
       {
         id: 1,
         name: 'Old Faithful',
+        location: 'Wyoming',
         description: 'Kuching, officially the City of Kuching',
         image: require('./../assets/images/malaysia/kuching.png'),
         rate: '4.89',
@@ -27,28 +29,6 @@ export const countries = [
             latlng: {
               latitude: 1.557907,
               longitude: 110.352079,
-            },
-          },
-          {
-            id: '2',
-            name: 'Grand Margherita Hotel',
-            image: require('./../assets/images/malaysia/kuching/grand_margherita_hotel.jpg'),
-            rate: 5,
-            price: 199,
-            latlng: {
-              latitude: 1.558163,
-              longitude: 110.352813,
-            },
-          },
-          {
-            id: '3',
-            name: 'Hilton Kuching',
-            image: require('./../assets/images/malaysia/kuching/hilton_kuching.jpg'),
-            rate: 5,
-            price: 199,
-            latlng: {
-              latitude: 1.557144,
-              longitude: 110.350496,
             },
           },
         ],
@@ -79,83 +59,12 @@ export const countries = [
               longitude: 101.685729,
             },
           },
-          {
-            id: '2',
-            name: 'Le Méridien Kuala Lumpur',
-            image: require('./../assets/images/malaysia/kuala_lumpur/le_meridien_kuala_lumpur.jpg'),
-            rate: 5,
-            price: 199,
-            latlng: {
-              latitude: 3.135843,
-              longitude: 101.686544,
-            },
-          },
-          {
-            id: '3',
-            name: 'The St. Regis Kuala Lumpur',
-            image: require('./../assets/images/malaysia/kuala_lumpur/the_st_regis_kuala_lumpur.jpg'),
-            rate: 5,
-            price: 199,
-            latlng: {
-              latitude: 3.136902,
-              longitude: 101.688924,
-            },
-          },
-        ],
-      },
-      {
-        id: 3,
-        name: 'Arches National Park',
-        description:
-          'George Town is the colorful, multicultural capital of the Malaysian island of Penang.',
-        image: require('./../assets/images/malaysia/penang.png'),
-        rate: '4.89',
-        theme: '🏔',
-        mapInitialRegion: {
-          latitude: 5.432068,
-          longitude: 100.317376,
-          latitudeDelta: 0.0053,
-          longitudeDelta: 0.0044,
-        },
-        hotels: [
-          {
-            id: '1',
-            name: 'Sunrise Gurney',
-            image: require('./../assets/images/malaysia/penang/sunrise_gurney.jpg'),
-            rate: 5,
-            price: 199,
-            latlng: {
-              latitude: 5.432874,
-              longitude: 100.31675,
-            },
-          },
-          {
-            id: '2',
-            name: 'Sunrise Gurney Homestay',
-            image: require('./../assets/images/malaysia/penang/sunrise_gurney_homestay.jpg'),
-            rate: 5,
-            price: 199,
-            latlng: {
-              latitude: 5.431626,
-              longitude: 100.317848,
-            },
-          },
-          {
-            id: '3',
-            name: 'Evergreen Laurel Hotel Penang',
-            image: require('./../assets/images/malaysia/penang/evergreen_laurel_hotel_penang.jpg'),
-            rate: 5,
-            price: 199,
-            latlng: {
-              latitude: 5.431288,
-              longitude: 100.317898,
-            },
-          },
         ],
       },
     ],
   },
   {
+    // THIS IS THE SECOND LOCATION - YOSEMITE
     id: 2,
     name: 'Yosemite',
     image: require('./../assets/images/india/india_map.png'),
@@ -226,37 +135,10 @@ export const countries = [
           },
         ],
       },
-      {
-        id: 3,
-        name: 'Agra',
-        description:
-          'Home to the symbol of love, Taj Mahal, Agra in Uttar Pradesh finds its spot on the world heritage map.',
-        image: require('./../assets/images/india/agra.png'),
-        rate: '4.89',
-        theme: '🏔',
-        mapInitialRegion: {
-          latitude: 27.168123,
-          longitude: 78.049032,
-          latitudeDelta: 0.0053,
-          longitudeDelta: 0.0044,
-        },
-        hotels: [
-          {
-            id: '1',
-            name: 'The Oberoi Amarvilas',
-            image: require('./../assets/images/india/agra/the_oberoi_amarvilas.jpg'),
-            rate: 5,
-            price: 199,
-            latlng: {
-              latitude: 27.168123,
-              longitude: 78.049032,
-            },
-          },
-        ],
-      },
     ],
   },
   {
+    // THIS IS THE THIRD LOCATION - GRAND CANYON
     id: 3,
     name: 'Grand Canyon',
     image: require('./../assets/images/indonesia/indonesia_map.png'),
@@ -335,34 +217,6 @@ export const countries = [
             latlng: {
               latitude: -6.227036,
               longitude: 106.827333,
-            },
-          },
-        ],
-      },
-      {
-        id: 3,
-        name: 'Nusa Penida',
-        description:
-          'If you are in Bali and you want to go off-beat, go to Nusa Penida. Nusa Penida is the biggest of the three Nusa Islands just off from mainland Bali.',
-        image: require('./../assets/images/indonesia/nusa_penida.png'),
-        rate: '4.89',
-        theme: '🏔',
-        mapInitialRegion: {
-          latitude: -8.703571,
-          longitude: 115.439826,
-          latitudeDelta: 0.0053,
-          longitudeDelta: 0.0044,
-        },
-        hotels: [
-          {
-            id: '1',
-            name: 'Purist Beach',
-            image: require('./../assets/images/indonesia/nusa_penida/purist_beach.jpg'),
-            rate: 5,
-            price: 199,
-            latlng: {
-              latitude: -8.703571,
-              longitude: 115.439826,
             },
           },
         ],

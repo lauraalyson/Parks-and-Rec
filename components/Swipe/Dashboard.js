@@ -13,6 +13,9 @@ import dummyData from './constants/dummy';
 import {SIZES, COLORS} from './constants/theme';
 import icons from './constants/icons';
 import TextButton from './constants/TextButton';
+import Entypo from 'react-native-vector-icons/Entypo';
+
+Entypo.loadFont();
 
 const COUNTRIES_ITEM_SIZE = SIZES.width / 3;
 const PLACES_ITEM_SIZE =
@@ -109,7 +112,6 @@ const Dashboard = ({navigation}) => {
               <Animated.View
                 opacity={opacity}
                 style={{
-                  height: 100,
                   width: COUNTRIES_ITEM_SIZE,
                   alignItems: 'center',
                   justifyContent: 'center',
@@ -248,6 +250,12 @@ const Dashboard = ({navigation}) => {
                       color: COLORS.white,
                       marginBottom: SIZES.radius,
                     }}>
+                    <Entypo
+                      name="location-pin"
+                      size={20}
+                      color={COLORS.white}
+                    />
+                    &nbsp;
                     {item.name}
                   </Text>
                   <Text

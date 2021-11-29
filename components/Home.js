@@ -8,17 +8,14 @@ import {
   ImageBackground,
 } from 'react-native';
 import colors from '../assets/colors/colors';
-import Feather from 'react-native-vector-icons/Feather';
 import Entypo from 'react-native-vector-icons/Entypo';
 import activitiesData from '../assets/data/activitiesData';
-import discoverCategoriesData from '../assets/data/discoverCategoriesData';
 import learnMoreData from '../assets/data/learnMoreData';
 import discoverData from '../assets/data/discoverData';
 import {SafeAreaView} from 'react-native-safe-area-context';
 import profile from '../assets/images/person.png';
 import {FlatList, TouchableOpacity} from 'react-native-gesture-handler';
 
-Feather.loadFont();
 Entypo.loadFont();
 
 const Home = ({navigation}) => {
@@ -32,10 +29,7 @@ const Home = ({navigation}) => {
         }>
         <ImageBackground
           source={item.image}
-          style={[
-            styles.discoverItem,
-            {marginLeft: item.id === 'discover-1' ? 20 : 0},
-          ]}
+          style={[styles.discoverItem, {marginLeft: item.id === '1' ? 20 : 0}]}
           imageStyle={styles.discoverItemImage}>
           <Text style={styles.discoverItemTitle}>{item.title}</Text>
           <View style={styles.discoverItemLocationWrapper}>
@@ -233,6 +227,8 @@ const styles = StyleSheet.create({
   },
   activityItemImage: {
     width: 36,
+    height: 36,
+    marginBottom: 3,
   },
   activityItemText: {
     marginTop: 5,

@@ -41,23 +41,16 @@ const Details = ({route, navigation}) => {
 
         <View style={styles.infoWrapper}>
           <View style={styles.infoItem}>
-            <Text style={styles.infoTitle}>PRICE</Text>
+            <Text style={styles.infoTitle}>DIFFICULTY</Text>
             <View style={styles.infoTextWrapper}>
-              <Text style={styles.infoText}>${item.price}</Text>
-              <Text style={styles.infoSubText}>/person</Text>
-            </View>
-          </View>
-          <View style={styles.infoItem}>
-            <Text style={styles.infoTitle}>RATING</Text>
-            <View style={styles.infoTextWrapper}>
-              <Text style={styles.infoText}>${item.rating}</Text>
+              <Text style={styles.infoText}>{item.rating}</Text>
               <Text style={styles.infoSubText}>/5</Text>
             </View>
           </View>
           <View style={styles.infoItem}>
             <Text style={styles.infoTitle}>DURATION</Text>
             <View style={styles.infoTextWrapper}>
-              <Text style={styles.infoText}>${item.duration}</Text>
+              <Text style={styles.infoText}>{item.duration}</Text>
               <Text style={styles.infoSubText}> hours</Text>
             </View>
           </View>
@@ -66,7 +59,7 @@ const Details = ({route, navigation}) => {
         <TouchableOpacity
           style={styles.buttonWrapper}
           onPress={() => alert('You booked a trip!')}>
-          <Text style={styles.buttonText}>Book Now</Text>
+          <Text style={styles.buttonText}>Swipe for Map</Text>
         </TouchableOpacity>
       </View>
     </View>
@@ -152,7 +145,6 @@ const styles = StyleSheet.create({
     marginTop: 20,
     justifyContent: 'space-between',
   },
-  infoItem: {},
   infoTitle: {
     fontFamily: 'Lato-Bold',
     fontSize: 12,
@@ -161,7 +153,7 @@ const styles = StyleSheet.create({
   infoTextWrapper: {
     flexDirection: 'row',
     alignItems: 'flex-end',
-    marginTop: 5,
+    marginTop: 2,
   },
   infoText: {
     fontFamily: 'Lato-Bold',

@@ -14,7 +14,6 @@ import learnMoreData from '../assets/data/learnMoreData';
 import {SafeAreaView} from 'react-native-safe-area-context';
 import profile from '../assets/images/person.png';
 import {FlatList, TouchableOpacity} from 'react-native-gesture-handler';
-import ParksandRec from '../assets/images/ParksandRec.png';
 
 Feather.loadFont();
 Entypo.loadFont();

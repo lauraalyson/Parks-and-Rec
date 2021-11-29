@@ -11,23 +11,13 @@ const activitiesData = [
   },
   {
     id: 'activites-3',
-    title: 'SPA',
-    image: require('../images/spa.png'),
+    title: 'CAMP',
+    image: require('../images/tent.png'),
   },
   {
     id: 'activites-6',
-    title: 'BIKE',
-    image: require('../images/bike.png'),
-  },
-  {
-    id: 'activites-5',
-    title: 'TENNIS',
-    image: require('../images/tennis.png'),
-  },
-  {
-    id: 'activites-4',
-    title: 'WATER SKI',
-    image: require('../images/water-ski.png'),
+    title: 'FOREST',
+    image: require('../images/forest.png'),
   },
 ];
 
