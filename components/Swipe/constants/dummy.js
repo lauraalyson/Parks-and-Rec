@@ -10,6 +10,7 @@ export const countries = [
         description: 'Kuching, officially the City of Kuching',
         image: require('./../assets/images/malaysia/kuching.png'),
         rate: '4.89',
+        theme: '🏔',
         mapInitialRegion: {
           latitude: 1.557177,
           longitude: 110.351902,
@@ -56,9 +57,10 @@ export const countries = [
         id: 2,
         name: 'Fairy Falls Trail',
         description:
-          'Kuala Lumpur is the capital of Malaysia. Its modern skyline is dominated by the 451m-tall Petronas Twin Towers, a pair of glass-and-steel-clad skyscrapers with Islamic motifs.',
+          'Kuala Lumpur is the capital of Malaysia. Its modern skyline is.',
         image: require('./../assets/images/malaysia/kuala_lumpur.png'),
         rate: '4.89',
+        theme: '🏔',
         mapInitialRegion: {
           latitude: 3.135662,
           longitude: 101.687128,
@@ -108,6 +110,7 @@ export const countries = [
           'George Town is the colorful, multicultural capital of the Malaysian island of Penang.',
         image: require('./../assets/images/malaysia/penang.png'),
         rate: '4.89',
+        theme: '🏔',
         mapInitialRegion: {
           latitude: 5.432068,
           longitude: 100.317376,
@@ -164,6 +167,7 @@ export const countries = [
           'Known for its gorgeous beaches, stellar nightlife, delish seafood, world-heritage listed monuments, Goa is where all the fun is in India.',
         image: require('./../assets/images/india/goa.png'),
         rate: '4.89',
+        theme: '🏔',
         mapInitialRegion: {
           latitude: 15.498931,
           longitude: 73.767945,
@@ -202,6 +206,7 @@ export const countries = [
           'The Pink City, Jaipur is a destination you cannot miss when visiting India. Jaipur is a perfect reflection of what the royal state of Rajasthan is about.',
         image: require('./../assets/images/india/jaipur.png'),
         rate: '4.89',
+        theme: '🏔',
         mapInitialRegion: {
           latitude: 26.928055,
           longitude: 75.788295,
@@ -229,6 +234,7 @@ export const countries = [
           'Home to the symbol of love, Taj Mahal, Agra in Uttar Pradesh finds its spot on the world heritage map.',
         image: require('./../assets/images/india/agra.png'),
         rate: '4.89',
+        theme: '🏔',
         mapInitialRegion: {
           latitude: 27.168123,
           longitude: 78.049032,
@@ -263,6 +269,7 @@ export const countries = [
           'Bali has it all. Scenic mountains, sacred temples, rich culture, sandy beaches, surf-worthy waves, lively nightlife, exciting shopping… and the list goes on.',
         image: require('./../assets/images/indonesia/bali.png'),
         rate: '4.89',
+        theme: '🏔',
         mapInitialRegion: {
           latitude: -8.422605,
           longitude: 115.274697,
@@ -301,6 +308,7 @@ export const countries = [
           'Jakarta may seem like a daunting megacity, but it also has a couple of interesting places that are worth a stopover.',
         image: require('./../assets/images/indonesia/jakarta.png'),
         rate: '4.89',
+        theme: '🏔',
         mapInitialRegion: {
           latitude: -6.227687,
           longitude: 106.826979,
@@ -339,6 +347,7 @@ export const countries = [
           'If you are in Bali and you want to go off-beat, go to Nusa Penida. Nusa Penida is the biggest of the three Nusa Islands just off from mainland Bali.',
         image: require('./../assets/images/indonesia/nusa_penida.png'),
         rate: '4.89',
+        theme: '🏔',
         mapInitialRegion: {
           latitude: -8.703571,
           longitude: 115.439826,

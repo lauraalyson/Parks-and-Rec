@@ -4,7 +4,6 @@ import {
   Text,
   Image,
   SafeAreaView,
-  TouchableOpacity,
   Animated,
   ScrollView,
   Platform,
@@ -36,53 +35,6 @@ const Dashboard = ({navigation}) => {
   ]);
 
   const [placesScrollPosition, setPlacesScrollPosition] = useState(0);
-
-  function renderHeader() {
-    return (
-      <View
-        style={{
-          flexDirection: 'row',
-          paddingHorizontal: SIZES.padding,
-          paddingVertical: SIZES.base,
-          alignItems: 'center',
-        }}>
-        {/* Side Drawer */}
-        <TouchableOpacity
-          style={{
-            width: 45,
-            height: 45,
-            alignItems: 'center',
-            justifyContent: 'center',
-          }}
-          onPress={() => console.log('side drawer')}>
-          <Image
-            source={icons.side_drawer}
-            resizeMode="contain"
-            style={{
-              width: 25,
-              height: 25,
-              tintColor: COLORS.white,
-            }}
-          />
-        </TouchableOpacity>
-
-        {/* Title */}
-        <View
-          style={{
-            flex: 1,
-            justifyContent: 'center',
-            alignItems: 'center',
-          }}>
-          <Text
-            style={{
-              color: COLORS.white,
-            }}>
-            ASIA
-          </Text>
-        </View>
-      </View>
-    );
-  }
 
   function renderCountries() {
     return (
@@ -157,25 +109,16 @@ const Dashboard = ({navigation}) => {
               <Animated.View
                 opacity={opacity}
                 style={{
-                  height: 130,
+                  height: 100,
                   width: COUNTRIES_ITEM_SIZE,
                   alignItems: 'center',
                   justifyContent: 'center',
                 }}>
-                <Animated.Image
-                  source={item.image}
-                  resizeMode="contain"
-                  style={{
-                    width: mapSize,
-                    height: mapSize,
-                    tintColor: COLORS.white,
-                  }}
-                />
                 <Animated.Text
                   style={{
-                    marginTop: 3,
                     color: COLORS.white,
                     fontSize: fontSize,
+                    textAlign: 'center',
                   }}>
                   {item.name}
                 </Animated.Text>
@@ -317,13 +260,12 @@ const Dashboard = ({navigation}) => {
                   </Text>
 
                   <TextButton
-                    label="Explore"
+                    label={item.theme}
                     customContainerStyle={{
                       position: 'absolute',
                       bottom: -20,
-                      width: 150,
+                      width: 80,
                     }}
-                    onPress={() => exploreButtonHandler()}
                   />
                 </View>
               </Animated.View>
@@ -336,8 +278,6 @@ const Dashboard = ({navigation}) => {
 
   return (
     <SafeAreaView style={{flex: 1, backgroundColor: COLORS.black}}>
-      {renderHeader()}
-
       <ScrollView
         contentContainerStyle={{
           paddingBottom: Platform.OS === 'ios' ? 40 : 0,
