@@ -4,7 +4,6 @@ import Home from './components/Home';
 import colors from './assets/colors/colors';
 import Details from './components/Details';
 import Hikes from './components/Hikes';
-import Profile from './components/Profile';
 import 'react-native-gesture-handler';
 import Entypo from 'react-native-vector-icons/Entypo';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
@@ -15,6 +14,7 @@ MaterialCommunityIcons.loadFont();
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import Dashboard from './components/Swipe/Dashboard';
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -48,8 +48,8 @@ const TabNavigator = () => {
         }}
       />
       <Tab.Screen
-        name="Profile"
-        component={Profile}
+        name="Dashboard"
+        component={Dashboard}
         options={{
           tabBarIcon: ({color}) => (
             <MaterialCommunityIcons name="account" size={28} color={color} />

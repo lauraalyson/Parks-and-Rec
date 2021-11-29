@@ -10,9 +10,10 @@ import {
   Platform,
 } from 'react-native';
 
-import {dummyData, COLORS, SIZES, icons} from './constants';
-
-import {TextButton} from '../components';
+import dummyData from './constants/dummy';
+import {SIZES, COLORS} from './constants/theme';
+import icons from './constants/icons';
+import TextButton from './constants/TextButton';
 
 const COUNTRIES_ITEM_SIZE = SIZES.width / 3;
 const PLACES_ITEM_SIZE =

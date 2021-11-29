@@ -1,14 +1,13 @@
 export const countries = [
   {
     id: 1,
-    name: 'Malaysia',
+    name: 'Yellowstone',
     image: require('./../assets/images/malaysia/malaysia_map.png'),
     places: [
       {
         id: 1,
-        name: 'Kuching',
-        description:
-          'Kuching, officially the City of Kuching, is the capital and the most populous city in the state of Sarawak in Malaysia. It is also the capital of Kuching Division.',
+        name: 'Old Faithful',
+        description: 'Kuching, officially the City of Kuching',
         image: require('./../assets/images/malaysia/kuching.png'),
         rate: '4.89',
         mapInitialRegion: {
@@ -55,7 +54,7 @@ export const countries = [
       },
       {
         id: 2,
-        name: 'Kuala Lumpur',
+        name: 'Fairy Falls Trail',
         description:
           'Kuala Lumpur is the capital of Malaysia. Its modern skyline is dominated by the 451m-tall Petronas Twin Towers, a pair of glass-and-steel-clad skyscrapers with Islamic motifs.',
         image: require('./../assets/images/malaysia/kuala_lumpur.png'),
@@ -104,7 +103,7 @@ export const countries = [
       },
       {
         id: 3,
-        name: 'Penang',
+        name: 'Arches National Park',
         description:
           'George Town is the colorful, multicultural capital of the Malaysian island of Penang.',
         image: require('./../assets/images/malaysia/penang.png'),
@@ -155,7 +154,7 @@ export const countries = [
   },
   {
     id: 2,
-    name: 'India',
+    name: 'Yosemite',
     image: require('./../assets/images/india/india_map.png'),
     places: [
       {
@@ -254,7 +253,7 @@ export const countries = [
   },
   {
     id: 3,
-    name: 'Indonesia',
+    name: 'Grand Canyon',
     image: require('./../assets/images/indonesia/indonesia_map.png'),
     places: [
       {
