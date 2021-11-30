@@ -1,21 +1,19 @@
 import React from 'react';
-import {Text, View, StyleSheet} from 'react-native';
+import {StyleSheet} from 'react-native';
 import Home from './components/Home';
 import colors from './assets/colors/colors';
-import Details from './components/Details';
-import Hikes from './components/Hikes';
 import 'react-native-gesture-handler';
 import Entypo from 'react-native-vector-icons/Entypo';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
-
-Entypo.loadFont();
-MaterialCommunityIcons.loadFont();
-
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import Dashboard from './components/Swipe/Dashboard';
 import Main from './components/Main';
+import Place from './components/Place';
+import Profile from './components/Profile';
+
+Entypo.loadFont();
+MaterialCommunityIcons.loadFont();
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -32,7 +30,7 @@ const TabNavigator = () => {
       }}>
       <Tab.Screen
         name="Home"
-        component={Home}
+        component={Main}
         options={{
           tabBarIcon: ({color}) => (
             <Entypo name="home" size={28} color={color} />
@@ -40,8 +38,8 @@ const TabNavigator = () => {
         }}
       />
       <Tab.Screen
-        name="Main"
-        component={Main}
+        name="Discover"
+        component={Home}
         options={{
           tabBarIcon: ({color}) => (
             <Entypo name="compass" size={28} color={color} />
@@ -49,8 +47,8 @@ const TabNavigator = () => {
         }}
       />
       <Tab.Screen
-        name="Dashboard"
-        component={Dashboard}
+        name="Profile"
+        component={Profile}
         options={{
           tabBarIcon: ({color}) => (
             <MaterialCommunityIcons name="account" size={28} color={color} />
@@ -71,8 +69,8 @@ const App = () => {
           options={{headerShown: false}}
         />
         <Stack.Screen
-          name="Details"
-          component={Details}
+          name="Place"
+          component={Place}
           options={{headerShown: false}}
         />
       </Stack.Navigator>
