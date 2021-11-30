@@ -3,7 +3,6 @@ export const parks = [
     // THIS IS THE FIRST LOCATION - YELLOWSTONE
     id: 1,
     name: 'Yellowstone',
-    image: require('./../../assets/images/Parks/Yellowstone/yellowstone3.jpg'),
     places: [
       {
         id: 1,
@@ -31,7 +30,7 @@ export const parks = [
         image: require('./../../assets/images/Parks/Yellowstone/yellowstone2.jpg'),
         rating: '4',
         duration: '6',
-        theme: '🏔',
+        theme: '⛺️',
         mapInitialRegion: {
           latitude: 3.135662,
           longitude: 101.687128,
@@ -45,7 +44,6 @@ export const parks = [
     // THIS IS THE SECOND LOCATION - YOSEMITE
     id: 2,
     name: 'Yosemite',
-    image: require('./../../assets/images/Parks/Yosemite/Yosemite3.jpg'),
     places: [
       {
         id: 1,
@@ -56,7 +54,7 @@ export const parks = [
         image: require('./../../assets/images/Parks/Yosemite/Yosemite1.jpg'),
         rating: '4.89',
         duration: '5',
-        theme: '🏔',
+        theme: '🏜',
         mapInitialRegion: {
           latitude: 15.498931,
           longitude: 73.767945,
@@ -73,7 +71,7 @@ export const parks = [
         image: require('./../../assets/images/Parks/Yosemite/Yosemite2.jpg'),
         rating: '4.89',
         duration: '3',
-        theme: '🏔',
+        theme: '🪵',
         mapInitialRegion: {
           latitude: 26.928055,
           longitude: 75.788295,
@@ -86,19 +84,18 @@ export const parks = [
   {
     // THIS IS THE THIRD LOCATION - GRAND CANYON
     id: 3,
-    name: 'Bryce Canyon',
-    image: require('./../../assets/images/Parks/BryceCanyon/BryceCanyon3.jpg'),
+    name: 'Zion',
     places: [
       {
         id: 1,
-        name: 'Bryce Trail 1',
+        name: 'Zion Trail 1',
         location: 'Utah',
         description:
           'Trail Description will go here. Lorem Ipsum will be the placeholder.',
-        image: require('./../../assets/images/Parks/BryceCanyon/BryceCanyon1.jpg'),
+        image: require('./../../assets/images/Parks/Zion/BryceCanyon1.jpg'),
         rating: '4.89',
         duration: '3',
-        theme: '🏔',
+        theme: '🥾',
         mapInitialRegion: {
           latitude: -8.422605,
           longitude: 115.274697,
@@ -112,7 +109,7 @@ export const parks = [
         location: 'Utah',
         description:
           'Trail Description will go here. Lorem Ipsum will be the placeholder.',
-        image: require('./../../assets/images/Parks/BryceCanyon/BryceCanyon2.jpg'),
+        image: require('./../../assets/images/Parks/Zion/BryceCanyon2.jpg'),
         rating: '4.89',
         duration: '2.5',
         theme: '🏔',
