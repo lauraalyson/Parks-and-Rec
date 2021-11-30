@@ -1,4 +1,4 @@
-# mobile-app-ui
+# Parks&Rec
 
 - `npm install`
 - `cd ios`
